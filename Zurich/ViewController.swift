@@ -12,20 +12,33 @@ class ViewController: UIViewController {
     
     @IBOutlet var time:UILabel!
     @IBOutlet var background:UIImageView!
+    
+    var possibleBackgrounds: [UIImage] = [
+        UIImage(named: "campingNight.jpg")!,
+        UIImage(named: "campingNight2.jpg")!
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        background.image = possibleBackgrounds.randomItem()
         
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         
         update()
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(willEnterForeground), name: UIApplicationWillEnterForegroundNotification, object: nil)
+    }
+    
+    func willEnterForeground() {
+        background.image = possibleBackgrounds.randomItem()
     }
     
     func update() {
-        let target = NSDate(timeIntervalSince1970: 1465452300)
+        let target = NSDate(timeIntervalSince1970: 1470857880)
         let current = NSDate()
         var remaining = target.timeIntervalSinceDate(current)
         if remaining < 0 {
@@ -57,6 +70,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
 
+extension Array {
+    func randomItem() -> Element {
+        let index = Int(arc4random_uniform(UInt32(self.count)))
+        return self[index]
+    }
+}

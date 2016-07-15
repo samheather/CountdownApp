@@ -13,10 +13,12 @@
 		7E76AB331CE0FBFF006D95DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB321CE0FBFF006D95DE /* Assets.xcassets */; };
 		7E76AB361CE0FBFF006D95DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB341CE0FBFF006D95DE /* LaunchScreen.storyboard */; };
 		7E76AB3E1CE10A6D006D95DE /* mountains.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB3D1CE10A6D006D95DE /* mountains.jpeg */; };
+		7ED197CE1D399D93001C14A9 /* campingNight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7ED197CD1D399D93001C14A9 /* campingNight.jpg */; };
+		7ED197D61D39A701001C14A9 /* campingNight2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7ED197D51D39A701001C14A9 /* campingNight2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E76AB281CE0FBFF006D95DE /* Zürich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zürich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E76AB281CE0FBFF006D95DE /* Outdoors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outdoors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E76AB2B1CE0FBFF006D95DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E76AB2D1CE0FBFF006D95DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E76AB301CE0FBFF006D95DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		7E76AB351CE0FBFF006D95DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E76AB371CE0FBFF006D95DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E76AB3D1CE10A6D006D95DE /* mountains.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpeg; sourceTree = "<group>"; };
+		7ED197CD1D399D93001C14A9 /* campingNight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campingNight.jpg; sourceTree = "<group>"; };
+		7ED197D51D39A701001C14A9 /* campingNight2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campingNight2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		7E76AB291CE0FBFF006D95DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E76AB281CE0FBFF006D95DE /* Zürich.app */,
+				7E76AB281CE0FBFF006D95DE /* Outdoors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				7E76AB3D1CE10A6D006D95DE /* mountains.jpeg */,
+				7ED197CD1D399D93001C14A9 /* campingNight.jpg */,
+				7ED197D51D39A701001C14A9 /* campingNight2.jpg */,
 				7E76AB2B1CE0FBFF006D95DE /* AppDelegate.swift */,
 				7E76AB2D1CE0FBFF006D95DE /* ViewController.swift */,
 				7E76AB2F1CE0FBFF006D95DE /* Main.storyboard */,
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E76AB271CE0FBFF006D95DE /* Zurich */ = {
+		7E76AB271CE0FBFF006D95DE /* Outdoors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E76AB3A1CE0FBFF006D95DE /* Build configuration list for PBXNativeTarget "Zurich" */;
+			buildConfigurationList = 7E76AB3A1CE0FBFF006D95DE /* Build configuration list for PBXNativeTarget "Outdoors" */;
 			buildPhases = (
 				7E76AB241CE0FBFF006D95DE /* Sources */,
 				7E76AB251CE0FBFF006D95DE /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = Zurich;
+			name = Outdoors;
 			productName = Zurich;
-			productReference = 7E76AB281CE0FBFF006D95DE /* Zürich.app */;
+			productReference = 7E76AB281CE0FBFF006D95DE /* Outdoors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7E76AB231CE0FBFF006D95DE /* Build configuration list for PBXProject "Zurich" */;
+			buildConfigurationList = 7E76AB231CE0FBFF006D95DE /* Build configuration list for PBXProject "Outdoors" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E76AB271CE0FBFF006D95DE /* Zurich */,
+				7E76AB271CE0FBFF006D95DE /* Outdoors */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED197CE1D399D93001C14A9 /* campingNight.jpg in Resources */,
 				7E76AB3E1CE10A6D006D95DE /* mountains.jpeg in Resources */,
 				7E76AB361CE0FBFF006D95DE /* LaunchScreen.storyboard in Resources */,
+				7ED197D61D39A701001C14A9 /* campingNight2.jpg in Resources */,
 				7E76AB331CE0FBFF006D95DE /* Assets.xcassets in Resources */,
 				7E76AB311CE0FBFF006D95DE /* Main.storyboard in Resources */,
 			);
@@ -257,7 +265,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.heather.mountains;
-				PRODUCT_NAME = "Zürich";
+				PRODUCT_NAME = Outdoors;
 			};
 			name = Debug;
 		};
@@ -269,14 +277,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.heather.mountains;
-				PRODUCT_NAME = "Zürich";
+				PRODUCT_NAME = Outdoors;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E76AB231CE0FBFF006D95DE /* Build configuration list for PBXProject "Zurich" */ = {
+		7E76AB231CE0FBFF006D95DE /* Build configuration list for PBXProject "Outdoors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E76AB381CE0FBFF006D95DE /* Debug */,
@@ -285,7 +293,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E76AB3A1CE0FBFF006D95DE /* Build configuration list for PBXNativeTarget "Zurich" */ = {
+		7E76AB3A1CE0FBFF006D95DE /* Build configuration list for PBXNativeTarget "Outdoors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E76AB3B1CE0FBFF006D95DE /* Debug */,

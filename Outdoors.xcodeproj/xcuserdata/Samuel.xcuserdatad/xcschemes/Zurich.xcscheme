@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7E76AB271CE0FBFF006D95DE"
-               BuildableName = "Zu&#x308;rich.app"
-               BlueprintName = "Zurich"
-               ReferencedContainer = "container:Zurich.xcodeproj">
+               BuildableName = "Outdoors.app"
+               BlueprintName = "Outdoors"
+               ReferencedContainer = "container:Outdoors.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E76AB271CE0FBFF006D95DE"
-            BuildableName = "Zu&#x308;rich.app"
-            BlueprintName = "Zurich"
-            ReferencedContainer = "container:Zurich.xcodeproj">
+            BuildableName = "Outdoors.app"
+            BlueprintName = "Outdoors"
+            ReferencedContainer = "container:Outdoors.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E76AB271CE0FBFF006D95DE"
-            BuildableName = "Zu&#x308;rich.app"
-            BlueprintName = "Zurich"
-            ReferencedContainer = "container:Zurich.xcodeproj">
+            BuildableName = "Outdoors.app"
+            BlueprintName = "Outdoors"
+            ReferencedContainer = "container:Outdoors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E76AB271CE0FBFF006D95DE"
-            BuildableName = "Zu&#x308;rich.app"
-            BlueprintName = "Zurich"
-            ReferencedContainer = "container:Zurich.xcodeproj">
+            BuildableName = "Outdoors.app"
+            BlueprintName = "Outdoors"
+            ReferencedContainer = "container:Outdoors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

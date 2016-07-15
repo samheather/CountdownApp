@@ -9,10 +9,47 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var time:UILabel!
+    @IBOutlet var background:UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+        
+        update()
+        
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+    }
+    
+    func update() {
+        let target = NSDate(timeIntervalSince1970: 1465452300)
+        let current = NSDate()
+        var remaining = target.timeIntervalSinceDate(current)
+        if remaining < 0 {
+            updateLabel("0 days\n00:00:00")
+            return
+        }
+        print(remaining)
+        
+        let days:Int = Int(remaining)/Int(86400)
+        let daysString = String(days)
+        
+        remaining = remaining - Double(days*86400)
+        
+        let interval:NSDate = NSDate(timeIntervalSince1970: remaining)
+        let formatter:NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "HH:mm:ss"
+        formatter.timeZone = NSTimeZone(name: "UTC")
+        
+        updateLabel(daysString+" days\n"+formatter.stringFromDate(interval))
+        
+    }
+    
+    func updateLabel(s:String) {
+        time.text = s
     }
 
     override func didReceiveMemoryWarning() {

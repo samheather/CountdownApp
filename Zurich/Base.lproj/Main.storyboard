@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zürich" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountains.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="tth-Er-UAI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000:00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMp-bh-rk7">
+                                <rect key="frame" x="20" y="34" width="560" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="vhd-DJ-i97"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="until..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTz-fM-ERQ">
+                                <rect key="frame" x="277" y="142" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="7Ed-jb-ZHl"/>
+                                    <constraint firstAttribute="height" constant="21" id="kiX-9s-SHO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOUNTAINS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYq-GH-SA0">
+                                <rect key="frame" x="186" y="171" width="229" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="T52-Mg-Al4"/>
+                                    <constraint firstAttribute="height" constant="40" id="ww2-Dn-7S0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tth-Er-UAI" secondAttribute="trailing" constant="-20" id="7dh-Cu-ieu"/>
+                            <constraint firstItem="eTz-fM-ERQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HS5-M3-8Mb"/>
+                            <constraint firstItem="tth-Er-UAI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="MKH-qa-sgr"/>
+                            <constraint firstItem="tMp-bh-rk7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P9h-xF-b2S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tth-Er-UAI" secondAttribute="bottom" id="Tey-qg-9Rz"/>
+                            <constraint firstItem="tMp-bh-rk7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Vd3-M7-dK1"/>
+                            <constraint firstItem="tth-Er-UAI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Y0M-OS-tLU"/>
+                            <constraint firstItem="gYq-GH-SA0" firstAttribute="top" secondItem="eTz-fM-ERQ" secondAttribute="bottom" constant="8" id="de9-xS-1eA"/>
+                            <constraint firstItem="eTz-fM-ERQ" firstAttribute="top" secondItem="tMp-bh-rk7" secondAttribute="bottom" constant="8" id="fBf-6V-AZG"/>
+                            <constraint firstItem="gYq-GH-SA0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKh-K1-J4W"/>
+                            <constraint firstItem="tMp-bh-rk7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="vRi-RX-hmg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="tth-Er-UAI" id="dGK-An-EuJ"/>
+                        <outlet property="time" destination="tMp-bh-rk7" id="Cmc-jk-FaE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="250" y="464"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mountains.jpeg" width="1536" height="2048"/>
+    </resources>
 </document>

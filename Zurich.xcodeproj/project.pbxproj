@@ -12,16 +12,18 @@
 		7E76AB311CE0FBFF006D95DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB2F1CE0FBFF006D95DE /* Main.storyboard */; };
 		7E76AB331CE0FBFF006D95DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB321CE0FBFF006D95DE /* Assets.xcassets */; };
 		7E76AB361CE0FBFF006D95DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB341CE0FBFF006D95DE /* LaunchScreen.storyboard */; };
+		7E76AB3E1CE10A6D006D95DE /* mountains.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7E76AB3D1CE10A6D006D95DE /* mountains.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E76AB281CE0FBFF006D95DE /* Zurich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zurich.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E76AB281CE0FBFF006D95DE /* Zürich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zürich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E76AB2B1CE0FBFF006D95DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E76AB2D1CE0FBFF006D95DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E76AB301CE0FBFF006D95DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E76AB321CE0FBFF006D95DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E76AB351CE0FBFF006D95DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E76AB371CE0FBFF006D95DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E76AB3D1CE10A6D006D95DE /* mountains.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 		7E76AB291CE0FBFF006D95DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E76AB281CE0FBFF006D95DE /* Zurich.app */,
+				7E76AB281CE0FBFF006D95DE /* Zürich.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +56,7 @@
 		7E76AB2A1CE0FBFF006D95DE /* Zurich */ = {
 			isa = PBXGroup;
 			children = (
+				7E76AB3D1CE10A6D006D95DE /* mountains.jpeg */,
 				7E76AB2B1CE0FBFF006D95DE /* AppDelegate.swift */,
 				7E76AB2D1CE0FBFF006D95DE /* ViewController.swift */,
 				7E76AB2F1CE0FBFF006D95DE /* Main.storyboard */,
@@ -81,7 +84,7 @@
 			);
 			name = Zurich;
 			productName = Zurich;
-			productReference = 7E76AB281CE0FBFF006D95DE /* Zurich.app */;
+			productReference = 7E76AB281CE0FBFF006D95DE /* Zürich.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E76AB3E1CE10A6D006D95DE /* mountains.jpeg in Resources */,
 				7E76AB361CE0FBFF006D95DE /* LaunchScreen.storyboard in Resources */,
 				7E76AB331CE0FBFF006D95DE /* Assets.xcassets in Resources */,
 				7E76AB311CE0FBFF006D95DE /* Main.storyboard in Resources */,
@@ -250,9 +254,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zurich/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sh.heather.Zurich;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = sh.heather.mountains;
+				PRODUCT_NAME = "Zürich";
 			};
 			name = Debug;
 		};
@@ -261,9 +266,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zurich/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sh.heather.Zurich;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = sh.heather.mountains;
+				PRODUCT_NAME = "Zürich";
 			};
 			name = Release;
 		};
@@ -286,6 +292,7 @@
 				7E76AB3C1CE0FBFF006D95DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
